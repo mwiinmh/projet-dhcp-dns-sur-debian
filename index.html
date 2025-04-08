@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet DHCP & DNS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #00ffcc;
+      font-family: 'Orbitron', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      background-image: radial-gradient(#003f3f 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #44ff88;
+    }
+    p {
+      font-size: 1rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #00ffcc;
+      color: #0f0f0f;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #00c0a0;
+    }
+    .terminal-bar {
+      background-color: #222;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      text-align: left;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal-bar">root@debian:~# ./projet_dhcp_dns</div>
+  <h1>Serveur DHCP & DNS sous Debian</h1>
+  <h2>Un projet réseau complet réalisé en première année</h2>
+  <p>
+    Attribution dynamique des IPs, résolution DNS locale et publique, automatisation<br/>
+    du fichier resolv.conf, zones BIND9 et configuration multi-LAN :<br/>
+    tout a été mis en œuvre dans ce TP pour maîtriser la gestion réseau sous Linux.
+  </p>
+  <a href="rapport.pdf" class="btn">📄 Voir le rapport complet</a>
+</body>
+</html>
