@@ -3,7 +3,7 @@
 Bienvenue dans ce projet réseau réalisé en BTS SIO SISR !  
 Ce TP met en place deux services fondamentaux : **DHCP** (attribution automatique d’adresses IP) et **DNS** (résolution de noms) sur une distribution **Debian Linux**.
 
-![Debian Logo](https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.png)
+![Debian Logo]([https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.png](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fenuwgpno843c1.png))
 
 ---
 
