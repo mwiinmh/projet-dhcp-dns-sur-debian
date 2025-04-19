@@ -67,25 +67,31 @@
       font-family: monospace;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #0a0a0a;
-      color: #00ffcc;
-      width: 100%;
-      font-size: 0.9rem;
-      position: fixed;
-      bottom: 0;
-    }
+   footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #00ffcc;
+  width: 100%;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(4px);
+}
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffffff;
+}
+footer img {
+  filter: brightness(0) invert(1); /* logo blanc sur fond sombre */
+  transition: transform 0.3s;
+}
+footer img:hover {
+  transform: scale(1.1);
+}
 
-    footer a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #ffffff;
-    }
   </style>
 </head>
 <body>
@@ -103,9 +109,16 @@
   <a href="rapport.pdf" class="btn">📄 Voir le rapport complet</a>
 
   <footer>
-    <p>© 2025 Mwindjou - Tous droits réservés |
-      <a href="https://github.com/mwiinmh" target="_blank" title="GitHub">GitHub</a>
-    </p>
-  </footer>
+  <p>
+    © 2025 Mwindjou - Tous droits réservés |
+    <a href="https://github.com/mwiinmh" target="_blank" title="Voir le GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+           alt="GitHub Logo"
+           width="24"
+           style="vertical-align: middle;" />
+    </a>
+  </p>
+</footer>
+
 </body>
 </html>
