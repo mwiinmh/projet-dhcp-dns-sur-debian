@@ -20,20 +20,25 @@
       background-image: radial-gradient(#003f3f 1px, transparent 1px);
       background-size: 20px 20px;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      color: #00ffee;
     }
+
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
       color: #44ff88;
     }
+
     p {
       font-size: 1rem;
       max-width: 600px;
       line-height: 1.6;
     }
+
     .btn {
       margin-top: 2rem;
       padding: 1rem 2rem;
@@ -47,9 +52,11 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .btn:hover {
       background-color: #00c0a0;
     }
+
     .terminal-bar {
       background-color: #222;
       width: 100%;
@@ -57,23 +64,48 @@
       text-align: left;
       font-size: 0.9rem;
       color: #888;
+      font-family: monospace;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      width: 100%;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+    }
+
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
   <div class="terminal-bar">root@debian:~# ./projet_dhcp_dns</div>
+
   <h1>Serveur DHCP & DNS sous Debian</h1>
   <h2>Un projet réseau complet réalisé en première année</h2>
+
   <p>
     Attribution dynamique des IPs, résolution DNS locale et publique, automatisation<br/>
     du fichier resolv.conf, zones BIND9 et configuration multi-LAN :<br/>
     tout a été mis en œuvre dans ce TP pour maîtriser la gestion réseau sous Linux.
   </p>
+
   <a href="rapport.pdf" class="btn">📄 Voir le rapport complet</a>
-</body>
-   <footer>
+
+  <footer>
     <p>© 2025 Mwindjou - Tous droits réservés |
-      <a href="https://github.com/mwiinmh" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/mwiinmh" target="_blank" title="GitHub">GitHub</a>
     </p>
   </footer>
+</body>
 </html>
