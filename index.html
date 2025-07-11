@@ -6,19 +6,44 @@
   <title>Projet DHCP & DNS</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
       background-color: #0f0f0f;
       color: #00ffcc;
       font-family: 'Orbitron', monospace;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
       background-image: radial-gradient(#003f3f 1px, transparent 1px);
       background-size: 20px 20px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .terminal-bar {
+      background-color: #222;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      text-align: left;
+      font-size: 0.9rem;
+      color: #888;
+      font-family: monospace;
     }
 
     h1 {
@@ -57,24 +82,11 @@
       background-color: #00c0a0;
     }
 
-    .terminal-bar {
-      background-color: #222;
-      width: 100%;
-      padding: 0.5rem 1rem;
-      text-align: left;
-      font-size: 0.9rem;
-      color: #888;
-      font-family: monospace;
-    }
-
     footer {
       text-align: center;
       padding: 1rem 0;
       color: #00ffcc;
-      width: 100%;
       font-size: 0.9rem;
-      position: fixed;
-      bottom: 0;
       backdrop-filter: blur(4px);
     }
 
@@ -101,16 +113,16 @@
 <body>
   <div class="terminal-bar">root@debian:~# ./projet_dhcp_dns</div>
 
-  <h1>Serveur DHCP & DNS sous Debian</h1>
-  <h2>Un projet réseau complet réalisé en première année</h2>
-
-  <p>
-    Attribution dynamique des IPs, résolution DNS locale et publique, automatisation<br />
-    du fichier <code>resolv.conf</code>, zones BIND9 et configuration multi-LAN :<br />
-    tout a été mis en œuvre dans ce TP pour maîtriser la gestion réseau sous Linux.
-  </p>
-
-  <a href="rapport.pdf" class="btn">📄 Voir le rapport complet</a>
+  <main>
+    <h1>Serveur DHCP & DNS sous Debian</h1>
+    <h2>Un projet réseau complet réalisé en première année</h2>
+    <p>
+      Attribution dynamique des IPs, résolution DNS locale et publique, automatisation<br />
+      du fichier <code>resolv.conf</code>, zones BIND9 et configuration multi-LAN :<br />
+      tout a été mis en œuvre dans ce TP pour maîtriser la gestion réseau sous Linux.
+    </p>
+    <a href="rapport.pdf" class="btn">📄 Voir le rapport complet</a>
+  </main>
 
   <footer>
     <p>
