@@ -48,7 +48,7 @@ Tu peux voir la présentation stylisée de ce projet ici 👇
 
 ---
 
-## 🧠 Bonus geek
+## 🧠 
 
 > `"Il n'y a pas de cloud, juste l'ordinateur de quelqu'un d'autre."`
 
